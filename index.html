@@ -18,10 +18,16 @@
             width: 50%;
             top: 210px;
         }
+        .wrapper {
+            position: relative;
+            display: flex;
+            min-width: 100px;
+        }
         .search {
             position: relative;
             left: 640px;
             top: 220px;
+            border-radius: 25px;
             }
             .gs {
                 position: relative;
@@ -33,6 +39,27 @@
                 left: 460px;
                 top: 260px;
             }
+            .mag {
+                height: 40px;
+                position: absolute;
+                top: 220px;
+                left: 640px;
+            }
+            .navbar {
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr 1fr;
+               position: relative;
+               bottom: 100px;
+
+
+            }
+            .nav {
+                grid-column-start: 1;
+                
+            }
+            .nav2 {
+                grid-column-start: 5;
+            }
 
 
 
@@ -41,16 +68,28 @@
     <body>
         <div>
             <img class="image" alt="Google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-
-        </div>
-        <div>
-            <form>
+            </div>
+        
+        <div class="wrapper">
+            <img class="mag" src="https://boyntonj.github.io/google-homepage/desktop_searchbox_sprites302_hr.webp">
             <input class="search" type="text" name="search">
             <input class="gs" type="submit" value="Google Search" name="gs">
             <input class="ifl" type="submit" value="I'm Feeling Lucky" name="ifl">
-            </form>
+            
         </div>
-        
+        <div class="navbar">
+            <nav class="nav">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+                </nav>
+                <nav class="nav2">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a href="#">?</a>
+                <a href="#">!</a>
+            </nav>
+
+        </div>
     
     </body>
 </html>
